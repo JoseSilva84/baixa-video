@@ -2,6 +2,8 @@ import express from 'express';
 import { exec } from 'child_process';
 import cors from 'cors';
 
+// criar uma exe do servidor é este código: pkg server.js --targets node18-win-x64
+
 const app = express();
 
 app.use(cors()); // Adiciona suporte a CORS
