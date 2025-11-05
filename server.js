@@ -23,6 +23,8 @@ app.post('/api/download', (req, res) => {
     });
 });
 
-app.listen(5500, () => {
+const port = process.env.port || 5500;
+
+app.listen(port, () => {
     console.log('Servidor rodando na porta 5500');
 });
