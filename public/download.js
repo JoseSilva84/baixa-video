@@ -7,9 +7,9 @@ function downloadVideo() {
         return;
     }
 
-    message.textContent = "Iniciando download...";
+    message.textContent = "Iniciando download... n\Aguarde terminar...";
     
-    fetch('https://baixa-video-k1nfy0mw7-josesilva84s-projects.vercel.app/', {
+    fetch('http://localhost:5500/api/download', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -24,18 +24,3 @@ function downloadVideo() {
         message.textContent = `Erro: ${error.message}`;
     });
 }
-//     fetch('http://localhost:5500/api/download', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify({ url: urlInput.value })
-//     })
-//     .then(response => response.json())
-//     .then(data => {
-//         message.textContent = data.message || 'Download concluído com sucesso!';
-//     })
-//     .catch(error => {
-//         message.textContent = `Erro: ${error.message}`;
-//     });
-// }
