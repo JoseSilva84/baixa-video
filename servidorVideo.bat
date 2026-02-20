@@ -1,4 +1,4 @@
 @echo off
-cd C:\Users\curso\Downloads\atividades javascript\baixarVideoRapido
+cd C:\Users\curso\Downloads\baixarVideoRapido
 node server.js
 pause
